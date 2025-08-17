@@ -1,31 +1,26 @@
-# shadcn/ui monorepo template
+# Workspace Monorepo
 
-This template is for creating a monorepo with shadcn/ui.
+A modern TypeScript monorepo with Next.js applications and shared packages.
 
-## Usage
+## Features
 
-```bash
-pnpm dlx shadcn@latest init
-```
+- 🚀 Next.js 15 with Turbopack
+- 📦 Shared UI components and utilities
+- 🔄 Workspace package dependencies
+- 🛠️ TypeScript strict mode
+- ⚡ TurboRepo for fast builds
 
-## Adding components
+## Packages
 
-To add components to your app, run the following command at the root of your `web` app:
+- `@workspace/math` - Shared math utilities
+- `@workspace/ui` - Shared UI components
+- `@workspace/typescript-config` - Shared TS configs
 
-```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
+## Apps
 
-This will place the ui components in the `packages/ui/src/components` directory.
+- `apps/web` - Main web application
+- `apps/widget` - Widget application
 
-## Tailwind
+## Getting Started
 
-Your `tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
-
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button"
-```
+1. Install dependencies:
