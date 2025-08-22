@@ -25,6 +25,8 @@ export const add = mutation({
       name: "Reziko",
     });
 
+    throw new Error("Tracking test error");
+
     return userId;
   },
 });
